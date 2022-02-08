@@ -12,6 +12,9 @@ public interface Cust_service {
 
 	public customer addCustomer(customer cust);
 
-	public customer getCustomersID(long cutomer_id);
+	public customer getCustomersID(long customer_id);
+
+	public void deleteCustomer(long customer_id);
+
 
 }

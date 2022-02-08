@@ -31,8 +31,17 @@ public class service_impl implements Cust_service{
 	}
 
 	@Override
-	public customer getCustomersID(long cutomer_id) {
+	public customer getCustomersID(long customer_id) {
 		// TODO Auto-generated method stub
-		return cust_doa.findById(cutomer_id).get();
+		return cust_doa.findById(customer_id).get();
 	}
+
+	@Override
+	public void deleteCustomer(long customer_id) {
+		// TODO Auto-generated method stub
+		customer entity=cust_doa.getOne(customer_id);
+		cust_doa.delete(entity);
+	}
+
+	
 }

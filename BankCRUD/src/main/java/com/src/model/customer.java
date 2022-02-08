@@ -10,17 +10,17 @@ import javax.persistence.Id;*/
 public class customer {
 	
 	@Id
-	private long cutomer_id;
+	private long customer_id;
 	private String customer_name;
 	private long balance;
 	private long phone_num;
 	
 	
-	public long getCutomer_id() {
-		return cutomer_id;
+	public long getCustomer_id() {
+		return customer_id;
 	}
-	public void setCutomer_id(long cutomer_id) {
-		this.cutomer_id = cutomer_id;
+	public void setCustomer_id(long cutomer_id) {
+		this.customer_id = cutomer_id;
 	}
 	public String getCustomer_name() {
 		return customer_name;
@@ -40,9 +40,9 @@ public class customer {
 	public void setPhone_num(long phone_num) {
 		this.phone_num = phone_num;
 	}
-	public customer(long cutomer_id, String customer_name, long balance, long phone_num) {
+	public customer(long customer_id, String customer_name, long balance, long phone_num) {
 		super();
-		this.cutomer_id = cutomer_id;
+		this.customer_id = customer_id;
 		this.customer_name = customer_name;
 		this.balance = balance;
 		this.phone_num = phone_num;
@@ -53,7 +53,7 @@ public class customer {
 	}
 	@Override
 	public String toString() {
-		return "customer [cutomer_id=" + cutomer_id + ", customer_name=" + customer_name + ", balance=" + balance
+		return "customer [customer_id=" + customer_id + ", customer_name=" + customer_name + ", balance=" + balance
 				+ ", phone_num=" + phone_num + "]";
 	}
 	
