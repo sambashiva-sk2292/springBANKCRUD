@@ -25,14 +25,14 @@ public class Controller {
 
 	}
 
-	@GetMapping("/get_all_cutomers")
+	@GetMapping("/get_all_customers")
 	public List<customer> getCustomers() {
 		
 		return this.customer_service.getCustomers();
 
 	}
 	
-	@GetMapping("/get_all_cutomers/{cutomer_id}")
+	@GetMapping("/get_all_customers/{customer_id}")
 	public customer getCustomersID(@PathVariable long cutomer_id) {
 		
 		return this.customer_service.getCustomersID(cutomer_id);
