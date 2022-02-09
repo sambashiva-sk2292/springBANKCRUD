@@ -16,5 +16,7 @@ public interface Cust_service {
 
 	public void deleteCustomer(long customer_id);
 
+	public customer updateCustomer(customer cust);
+
 
 }

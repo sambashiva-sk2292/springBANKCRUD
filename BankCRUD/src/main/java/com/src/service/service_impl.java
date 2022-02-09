@@ -43,5 +43,11 @@ public class service_impl implements Cust_service{
 		cust_doa.delete(entity);
 	}
 
+	@Override
+	public customer updateCustomer(customer cust) {
+		// TODO Auto-generated method stub
+		return cust_doa.save(cust);
+	}
+
 	
 }
